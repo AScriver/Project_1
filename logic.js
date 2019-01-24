@@ -105,7 +105,7 @@ $("#submit-data").on("click", function (event) {
           songName = trackSearch.message.body.track_list[0].track.track_name;
           album = trackSearch.message.body.track_list[0].track.album_name;
           lyrics = response.message.body.lyrics.lyrics_body;
-          releaseDate = trackSearch.message.body.track_list[0].track.first_release_date;
+          releaseDate = trackSearch.message.body.track_list[0].track.updated_time;
 
           connectionsRef.push({
             artistName: artistName,
